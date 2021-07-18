@@ -122,14 +122,13 @@
         <!-- url = document.getElementById("src").value; -->
 	    <!-- document.getElementById("src").value="" -->
         <!-- document.getElementById("demo").innerHTML = "当前播放："+channel; -->
+        var name = new Array();
+        name=channel.split(" ");
+        channel=name[0];
         document.getElementById("title").innerHTML =channel;
-
-
         player.src(value);
 			
     }
-    
-    
     
     <!-- function myFunction() { -->
     <!-- url = document.getElementById("src").value; -->
@@ -141,7 +140,7 @@
         var url="http://39.135.138.8:6610/PLTV/88888888/224/3221225646/2/index.m3u8?fmt=ts2hls";
         <!-- document.getElementById("src").value=url; -->   
         <!-- document.getElementById("demo").innerHTML = "当前默认播放："+"CCTV9 8M 1080"; --> 
-        document.getElementById("title").innerHTML ="CCTV9 8M 1080";
+        document.getElementById("title").innerHTML ="CCTV9";
 
         player.src(url);   
 </script>  
